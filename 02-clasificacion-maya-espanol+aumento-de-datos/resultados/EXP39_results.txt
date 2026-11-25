@@ -1,0 +1,28 @@
+Experiment ID: EXP39
+Model Used: EfficientNetB0
+Parameters: {'batch_size': 20, 'epochs': 30, 'learning_rate': 0.0001}
+Split Used: {'train': 80, 'validation': 10, 'test': 10}
+Split Seed: 1
+Results:
+  Accuracy: 0.7928571428571428
+  Recall: 0.9785714285714285
+  Precision: 0.7135416666666666
+  F1 Score: 0.8253012048192772
+Notes: tratando de reproducir los resultados del paper a partir de los espectogramas sin silencios
+
+Confusion Matrix:
+         spanish  maya
+spanish       85    55
+maya           3   137
+Training and Validation Accuracy Data:
+Epoch,Training Accuracy,Validation Accuracy
+1,0.7665178775787354,0.5
+2,0.8125,0.5
+3,0.8263393044471741,0.7821428775787354
+4,0.8450892567634583,0.5357142686843872
+5,0.856249988079071,0.5
+6,0.8522321581840515,0.5
+7,0.8517857193946838,0.5
+8,0.8705357313156128,0.5357142686843872
+
+Accuracy Plot Image: /content/drive/MyDrive/spectograms/experimentos/EXP39_accuracy_plot.png

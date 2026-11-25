@@ -1,0 +1,26 @@
+
+Experiment ID: EXP40
+Hash: 39e2746f698a87e899f11543b019c4ae
+Languages: ['maya', 'spanish']
+Audio Folders Used: ['spanish_no_silence', 'mayan_without_silence']
+Image Amount per Language: {'spanish': 2125, 'maya': 1725}
+Silence Removed: False
+Audio Length: 
+Balance Applied: 1
+Audios Used per Language (if balanced): 1350
+Model Used: MobileNetV3-Small
+Data Augmentation Strategies: {'RandomFlip': 'horizontal_and_vertical', 'RandomRotation': 0.1, 'RandomZoom': 0.2, 'RandomContrast': 0.2}
+Training Parameters: {'batch_size': 20, 'epochs': 30, 'learning_rate': 0.0001}
+Data Split Used: {'train': 80, 'validation': 10, 'test': 10}
+Split Seed: 1
+
+---
+Results:
+Accuracy: 0.774074074074074 Recall: 0.8 Precision: 0.7605633802816901 F1: 0.779783393501805
+---
+Confusion Matrix:
+[[101  34]
+ [ 27 108]]
+---
+
+Notes: tratando de reproducir los resultados del paper a partir de los espectogramas sin silencios

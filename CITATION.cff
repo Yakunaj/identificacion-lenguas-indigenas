@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "Cita el repositorio y las fuentes de cada proyecto segun sus condiciones."
+title: "Identificacion automatica de lenguas indigenas"
+version: 0.1.0-draft
+date-released: 2026-11-08
+authors:
+  - family-names: "[P]"
+    given-names: "[P]"
+    orcid: "[P]"
+    affiliation: "[P]"
+  - family-names: "[P]"
+    given-names: "[P]"
+    orcid: "[P]"
+    affiliation: "[P]"
+license: "[P]"
+repository-code: "[P]"
+contact: "[P]"
+references: []
+

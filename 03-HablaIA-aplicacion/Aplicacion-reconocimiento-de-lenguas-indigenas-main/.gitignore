@@ -1,0 +1,53 @@
+# Flutter/Dart
+.dart_tool/
+.packages
+.pub/
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+*.hprof
+*.log
+
+# Android
+android/.gradle/
+android/app/build/
+android/build/
+android/captures/
+.gradle/
+local.properties
+
+# Keystore files
+*.jks
+*.keystore
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# iOS
+ios/Pods/
+
+# Node
+node_modules/
+
+# Environment files
+.env
+.env.*
+
+# Entrenamiento: modelos .keras y copias .zip pesadas, se quedan solo en local
+*.keras
+*.zip
+
+# Python y Jupyter
+__pycache__/
+.ipynb_checkpoints/
+
+# Salidas de IntelliJ/Gradle de los proyectos Kotlin de entrenamiento
+out/
+
+# Grabaciones de voz, se quedan solo en local
+*.aac
+*.m4a
+*.mp3
+*.wav

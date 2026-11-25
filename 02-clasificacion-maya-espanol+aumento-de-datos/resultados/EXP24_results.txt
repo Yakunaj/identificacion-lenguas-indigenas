@@ -1,0 +1,12 @@
+Experiment ID: EXP24
+Model Used: EfficientNetB0
+Parameters: {'batch_size': 20, 'epochs': 50, 'learning_rate': 0.0001}
+Data Augmentation Strategies: {'RandomFlip': 'horizontal_and_vertical', 'RandomRotation': 0.2, 'RandomZoom': 0.2, 'RandomContrast': 0.2}
+Split Used: {'train': 80, 'validation': 10, 'test': 10}
+Split Seed: 1
+Results:
+  Accuracy: 0.6
+  Recall: 0.22142857142857142
+  Precision: 0.9117647058823529
+  F1 Score: 0.3563218390804598
+Notes: tratando de reproducir los resultados del paper a partir de los espectogramas sin silencios

@@ -1,0 +1,35 @@
+# Flutter/Dart
+.dart_tool/
+.packages
+.pub/
+build/
+.flutter-plugins          # ← FALTA
+.flutter-plugins-dependencies  # ← FALTA
+.hprof
+.log
+
+# Android
+android/.gradle/
+android/app/build/
+android/build/            # ← FALTA (a veces se genera)
+android/captures/         # ← FALTA
+.gradle/
+local.properties
+
+# Keystore files
+*.jks
+*.keystore
+
+# VS Code settings (uncomment if you want to keep them private)
+.vscode/
+
+# iOS
+ios/Pods/
+
+# Node
+node_modules/
+
+# Environment files
+.env
+.env.*
+android/hs_err_pid31812.log

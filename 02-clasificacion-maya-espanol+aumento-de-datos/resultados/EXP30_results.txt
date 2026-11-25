@@ -1,0 +1,37 @@
+Experiment ID: EXP30
+Model Used: EfficientNetB0
+Parameters: {'batch_size': 18, 'epochs': 50, 'learning_rate': 1e-05}
+Data Augmentation Strategies: {'RandomFlip': 'horizontal_and_vertical', 'RandomRotation': 0.2, 'RandomZoom': 0.2, 'RandomContrast': 0.2}
+Split Used: {'train': 80, 'validation': 10, 'test': 10}
+Split Seed: 1
+Results:
+  Accuracy: 0.7321428571428571
+  Recall: 0.5571428571428572
+  Precision: 0.8571428571428571
+  F1 Score: 0.6753246753246753
+Notes: tratando de reproducir los resultados del paper a partir de los espectogramas sin silencios
+
+Confusion Matrix:
+         spanish  maya
+spanish      127    13
+maya          62    78
+Training and Validation Accuracy Data:
+Epoch,Training Accuracy,Validation Accuracy
+1,0.6584821343421936,0.5
+2,0.7450892925262451,0.5785714387893677
+3,0.7482143044471741,0.5321428775787354
+4,0.7602678537368774,0.5321428775787354
+5,0.7598214149475098,0.6035714149475098
+6,0.7736607193946838,0.5714285969734192
+7,0.7808035612106323,0.6464285850524902
+8,0.7767857313156128,0.7214285731315613
+9,0.7901785969734192,0.6357142925262451
+10,0.7910714149475098,0.6535714268684387
+11,0.8040178418159485,0.7892857193946838
+12,0.7928571701049805,0.6714285612106323
+13,0.7977678775787354,0.7571428418159485
+14,0.8089285492897034,0.7535714507102966
+15,0.8035714030265808,0.6428571343421936
+16,0.8133928775787354,0.7428571581840515
+
+Accuracy Plot Image: /content/drive/MyDrive/spectograms/experimentos/EXP30_accuracy_plot.png

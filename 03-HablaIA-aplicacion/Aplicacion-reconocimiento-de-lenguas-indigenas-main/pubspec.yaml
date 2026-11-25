@@ -1,0 +1,38 @@
+name: hablaia
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+
+
+environment:
+  sdk: ^3.10.8
+
+dependencies:
+  flutter:
+    sdk: flutter
+  permission_handler: ^12.0.1
+  image: ^4.8.0
+
+  path_provider: ^2.1.5
+  intl: ^0.20.2
+  audioplayers: ^6.6.0
+  path: ^1.9.1
+  tflite_flutter: ^0.12.1
+  shared_preferences: ^2.5.5
+  sqflite: ^2.4.2+1
+  geolocator: ^14.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  change_app_package_name: ^1.5.0
+  sqflite_common_ffi: ^2.4.7
+
+flutter:
+  uses-material-design: true
+  assets:
+    # Los .tflite; su configuración está en lib/estructuras/modelos_disponibles_estructura.dart
+    - lib/modelos/
+
