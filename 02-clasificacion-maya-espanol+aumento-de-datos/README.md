@@ -64,6 +64,8 @@ Contiene [`Tesis_MODELOS_LIGEROS.pdf`](documentos/Tesis_MODELOS_LIGEROS.pdf), la
 
 Contiene cuarenta archivos `.keras`, uno por experimento (`EXP1_model.keras` a `EXP40_model.keras`; el de `EXP2` se guardó como `EXP2_model_0.76.keras`). No hay modelo para `EXP0`, el experimento inicial de prueba con accuracy 0,5. Cada modelo se guarda al final del entrenamiento desde la celda correspondiente del notebook.
 
+> **Nota sobre Git LFS:** los cuarenta modelos `.keras` se almacenan en el repositorio con [Git Large File Storage](https://git-lfs.com/), configurado en el [`.gitattributes`](../.gitattributes) de la raíz (`*.keras filter=lfs`). La carpeta ocupa unos 3,9 GB y cada modelo ronda los 184 MB, por lo que no se guardan como archivos normales de Git. Para obtener los pesos reales, instala Git LFS antes de clonar (`git lfs install`) y ejecuta `git lfs pull` después; sin esos pasos verás archivos puntero de unas pocas líneas en lugar de los modelos y Keras no podrá cargarlos. Lo mismo ocurre si descargas el repositorio como ZIP desde GitHub: el archivo contiene los punteros, no los pesos.
+
 ### `resultados/`
 
 - **`log.csv`**: bitácora de experimentos (descrita abajo), con 41 filas `EXP0`–`EXP40`.
@@ -164,7 +166,7 @@ La tesis, por su parte, organiza el trabajo en dos fases. En la primera los mode
 
 ## Cómo reproducirlo
 
-Requiere una cuenta de Google Colab con Google Drive, y las bibliotecas `tensorflow`, `keras`, `scikit-learn`, `matplotlib` y `seaborn`, además de los espectrogramas sin silencio en las carpetas de Drive. Se abre el notebook del modelo deseado y se ejecutan las celdas en orden: conexión al Drive, conteo y balanceo de espectrogramas, carga y división de imágenes, extracción de características, entrenamiento con *early stopping*, evaluación y guardado.
+Requiere una cuenta de Google Colab con Google Drive, y las bibliotecas `tensorflow`, `keras`, `scikit-learn`, `matplotlib` y `seaborn`, además de los espectrogramas sin silencio en las carpetas de Drive. Si además se quieren cargar los modelos ya entrenados desde el repositorio, hay que tener Git LFS instalado y haber ejecutado `git lfs pull`; este paso no es necesario para entrenar uno nuevo. Se abre el notebook del modelo deseado y se ejecutan las celdas en orden: conexión al Drive, conteo y balanceo de espectrogramas, carga y división de imágenes, extracción de características, entrenamiento con *early stopping*, evaluación y guardado.
 
 Los notebooks no usan rutas relativas al repositorio: todas las lecturas y escrituras apuntan a `/content/drive/MyDrive/spectograms/`. Para ejecutarlos con los datos de este repositorio hay que subir `datos/spectograms/mayan_without_silence/` y `datos/spectograms/spanish_no_silence/` a esa ubicación de Drive, o cambiar `directorio_de_trabajo` por la ruta local deseada. Las salidas se generan en `experimentos/` de Drive (modelo `[ID_Exp]_model.keras`, archivos `[ID_Exp]_results.txt` o `[ID_Exp]_details.txt` y gráfica `[ID_Exp]_accuracy_plot.png`), mientras que `log.csv` se guarda en la raíz del directorio de trabajo. En el repositorio estos archivos se han organizado en `modelos/` y `resultados/`.
 
