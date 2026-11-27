@@ -6,14 +6,5 @@ venv/
 .gradle/
 .dart_tool/
 build/
-*.wav
-*.mp3
-*.flac
-*.ogg
-**/audios/
-**/audio/
-**/spectrograms/
-**/espectrogramas/
-**/Metadata/
-**/metadatos-crudos/
+
 
