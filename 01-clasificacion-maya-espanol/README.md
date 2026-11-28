@@ -27,7 +27,7 @@ La organización actual concentra los espectogramas y audios en `datos/`, el có
 │   ├── audios/{mayan, nahuatl, spanish}/
 │   └── spectrograms/{mayan, nahuatl, spanish}/
 ├── documentos/
-│   └── Pueble-Nahuatl-Manifest/
+│   └── Puebla-Nahuatl-Manifest/
 ├── modelos/
 └── resultados/
     ├── graficas/{spanish_mayan, mayan_nahuatl, spanish_nahuatl}/
@@ -82,7 +82,7 @@ Scripts y macros que ayudan a modificar los audios:
 
 ### `documentos/`
 
-Contiene los artículos de referencia, el documento de licencia del corpus Puebla-Náhuatl y toda la documentación oficial del corpus en `Pueble-Nahuatl-Manifest/`.
+Contiene los artículos de referencia, el documento de licencia del corpus Puebla-Náhuatl y toda la documentación oficial del corpus en `Puebla-Nahuatl-Manifest/`.
 
 ### `modelos/`
 
@@ -125,9 +125,9 @@ Los audios de dominio público se pueden encontrar en las siguientes fuentes.
 
 ### Náhuatl
 
-- **Puebla-Náhuatl**: <https://www.openslr.org/92> [6]. La documentación de este corpus se encuentra en `documentos/Pueble-Nahuatl-Manifest/`. Debido a las restricciones de tamaño de GitHub, los audios originales anteriores al trozado no se incluyeron en el repositorio: el enlace anterior apunta al corpus original y a continuación se describe el procesamiento realizado.
+- **Puebla-Náhuatl**: <https://www.openslr.org/92> [6]. La documentación de este corpus se encuentra en `documentos/Puebla-Nahuatl-Manifest/`. Debido a las restricciones de tamaño de GitHub, los audios originales anteriores al trozado no se incluyeron en el repositorio: el enlace anterior apunta al corpus original y a continuación se describe el procesamiento realizado.
 
-  Los audios de entrenamiento se tomaron todos de la subcarpeta `Medicina_79` del corpus original, con un total de 79 audios. La mayoría tiene dos hablantes, cada uno grabado en un canal distinto, por lo que los audios se separaron en dos (uno por canal) con Audacity. Su duración oscilaba entre un minuto y más de una hora, así que, usando `documentos/Pueble-Nahuatl-Manifest/Metadata/Metadata_Cuetzalan-954-Recordings.xml`, se seleccionaron algunos audios según género y duración para trozarlos en clips de 10 segundos. Esto produjo un total de 1747 clips; consultando `datos/audios/nahuatl/chosen_one_speaker_audios.txt` se puede saber qué audios se eligieron para trozarse.
+  Los audios de entrenamiento se tomaron todos de la subcarpeta `Medicina_79` del corpus original, con un total de 79 audios. La mayoría tiene dos hablantes, cada uno grabado en un canal distinto, por lo que los audios se separaron en dos (uno por canal) con Audacity. Su duración oscilaba entre un minuto y más de una hora, así que, usando `documentos/Puebla-Nahuatl-Manifest/Metadata/Metadata_Cuetzalan-954-Recordings.xml`, se seleccionaron algunos audios según género y duración para trozarlos en clips de 10 segundos. Esto produjo un total de 1747 clips; consultando `datos/audios/nahuatl/chosen_one_speaker_audios.txt` se puede saber qué audios se eligieron para trozarse.
 
 ## Entrenamiento del modelo
 
@@ -181,4 +181,4 @@ El notebook usa las rutas de la estructura actual, relativas a su ubicación en 
 
 ## Autoría y licencia
 
-La metodología, los experimentos y el código proceden del trabajo original `Language-Classification-CNN`. La autoría dentro de este repositorio está pendiente de definir (`[P]`). La licencia del repositorio es provisional, según [`../LICENSE`](../LICENSE), y los corpus de terceros conservan sus licencias y avisos originales, en particular la documentación incluida en `documentos/Pueble-Nahuatl-Manifest/`.
+La metodología, los experimentos y el código proceden del trabajo original `Language-Classification-CNN`. La autoría dentro de este repositorio está pendiente de definir (`[P]`). La licencia del repositorio es provisional, según [`../LICENSE`](../LICENSE), y los corpus de terceros conservan sus licencias y avisos originales, en particular la documentación incluida en `documentos/Puebla-Nahuatl-Manifest/`.
