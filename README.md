@@ -44,7 +44,7 @@ El trabajo completo utiliza audios y espectrogramas con distintos niveles de acc
 | Audios públicos | [`01-clasificacion-maya-espanol/datos/audios/`](01-clasificacion-maya-espanol/datos/audios/) | Audios originales y clips del proyecto 01, separados por lengua. |
 | Espectrogramas del proyecto 01 | [`01-clasificacion-maya-espanol/datos/spectrograms/`](01-clasificacion-maya-espanol/datos/spectrograms/) | Espectrogramas generados a partir de los audios anteriores, con las variantes sin silencio y por clip. |
 | Espectrogramas del proyecto 02 | [`02-clasificacion-maya-espanol+aumento-de-datos/datos/spectograms/`](02-clasificacion-maya-espanol+aumento-de-datos/datos/spectograms/) | Copia parcial de los espectrogramas sin silencio: 392 de maya y 546 de español. |
-| Audios restringidos | [`Audios INALI`](https://github.com/Yakunaj/Audios-INALI) | Repositorio privado; requiere autorización. No están incluidos aquí. |
+| Audios restringidos | [`Audios INALI`]([https://github.com/Yakunaj/Audios-INALI](https://drive.google.com/drive/folders/1usv2-G1POv_V0xXvwwGHEjBLB5P7yJ5y?usp=sharing)) | Unidad de Google Drive; requiere autorización. No están incluidos aquí. |
 | Audios del proyecto 04 | [Google Drive](https://drive.google.com/drive/folders/1TQwCDDDMf2kuVycOb_rD0mIOlI_0xtux?usp=sharing) | Audios de entrenamiento del clasificador maya-náhuatl-zapoteco. |
 | Espectrogramas del proyecto 04 | [Google Drive](https://drive.google.com/drive/folders/1RncuOhLhO8K3MuJ6cTW3n1RTG9bSAB3l?usp=sharing) | Espectrogramas de entrenamiento del clasificador maya-náhuatl-zapoteco. |
 
